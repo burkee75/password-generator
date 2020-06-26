@@ -64,9 +64,6 @@ def main():
 
     # execute parser
     args = my_parser.parse_args()
-    input_length = args.length
-    special_chars_set = args.special
-
     print(generate_password(args.length, args.special))
 
 
