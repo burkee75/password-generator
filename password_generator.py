@@ -55,11 +55,19 @@ def main():
         required=True,
     )
     my_parser.add_argument(
-        "--special", action="store_true", help="Use special characters", required=False
+        "-s",
+        "--special",
+        action="store_true",
+        help="Use special characters",
+        required=False,
     )
 
     my_parser.add_argument(
-        "--case", action="store_true", help="Use different case, ie A a", required=False
+        "-c",
+        "--case",
+        action="store_true",
+        help="Use different case, ie A a",
+        required=False,
     )
 
     # execute parser
